@@ -1,0 +1,147 @@
+@import "_mixin";
+html{
+  font-size: 10px;
+}
+#wrap{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media only screen and (max-width:$tablet-size){
+    padding: 0;
+    padding-top: 50px;
+  }
+  @media only screen and (max-width:$mobile-size){
+    padding-top: 25px;
+    }
+
+}
+
+.content-box{
+  margin-top: 100px;
+}
+.content-box:first-child{
+  margin-top: 50px;
+}
+
+/*product table*/
+.product{
+  text-align: center;
+}
+.product__tit{
+  display: inline-block;
+  position: relative;
+  font-size: 46px;
+  font-weight: 400;
+  color: #333333;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 2.5rem;
+
+    }
+}
+.product__list{
+  margin-top: 20px;
+  border-left:1px solid #c1c1c1;
+  border-right:1px solid #c1c1c1;
+  @media only screen and (max-width:$tablet-size){
+    border: none;
+    }
+}
+.product__item{
+  display: table;
+  border-top: 1px solid #c1c1c1;
+  @media only screen and (max-width:$tablet-size){
+    display: block;
+    border:1px solid #c1c1c1;
+    margin-top: 30px;
+    }
+}
+.product__item:first-child{
+  margin-top: 0;
+}
+.product__item:last-child{
+  border-bottom: 1px solid #c1c1c1;
+}
+.product__thumb{
+  display: table-cell;
+  width: 30%;
+  @media only screen and (max-width:$tablet-size){
+    display: block;
+    width: 100%;
+    }
+}
+
+.product__thumb img{
+  width: 100%;
+}
+
+.product__desc{
+  display: table-cell;
+  width: 70%;
+  vertical-align: middle;
+  padding: 0 50px;
+  border-left:1px solid #c1c1c1;
+  text-align: left;
+  @media only screen and (max-width:$tablet-size){
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-left:none;
+    text-align: center;
+    }
+}
+.product__tit-small{
+  font-size: 28px;
+  font-weight: 400;
+  color: #787878;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 1.8rem;
+    }
+
+}
+.product__txt1{
+  margin-top: 15px;
+  font-size: 17px;
+  color: #666;
+  font-weight: 300;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+/*font*/
+
+.tit-v1{
+  font-size: 46px;
+  font-weight: 400;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 2.5rem;
+    }
+}
+.tit-v2{
+  font-size: 20px;
+  font-weight: 400;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 2.0em;
+    }
+}
+.tit-sub{
+  font-size: 28px;
+  font-weight: 400;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 1.8rem;
+    }
+}
+.txt-v1{
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 300;
+  @media only screen and (max-width:$mobile-size){
+    font-size: 1.5rem;
+    }
+}
+

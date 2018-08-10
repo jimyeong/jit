@@ -1,0 +1,56 @@
+#wrap{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  -webkit-animation: fadeIn 0.3s linear;
+  -o-animation: fadeIn 0.3s linear;
+  animation: fadeIn 0.3s linear;
+}
+
+.graph{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    top: 30px;
+  }
+  100%{
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.fadeIn{
+  -webkit-animation: scrollFadeIn 0.7s linear;
+  -o-animation: scrollFadeIn 0.7s linear;
+  animation: scrollFadeIn 0.7s linear;
+}
+
+
+@keyframes scrollFadeIn {
+  0%{
+    opacity: 0;
+    top: 50px;
+  }
+  100%{
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.scrollFadeIn{
+  -webkit-animation: scrollFadeIn 0.7s linear;
+  -o-animation: scrollFadeIn 0.7s linear;
+  animation: scrollFadeIn 0.7s linear;
+}
