@@ -145,3 +145,56 @@ html{
     }
 }
 
+
+/*common*/
+.hidden-pm {
+  display: none !important;
+}
+
+.hidden-m {
+  display: inline-block !important;
+}
+
+.hidden-pt {
+  display: none !important;
+}
+
+.hidden-p {
+  display: none !important;
+}
+
+@media only screen and (max-width: $tablet-size) {
+  .hidden-p {
+    display: block !important;
+  }
+  .hidden-t {
+    display: none !important;
+  }
+  .hidden-pt {
+    display: none !important;
+  }
+  .hidden-tm {
+    display: none !important;
+  }
+  .hidden-pm {
+    display: block !important;
+  }
+  .hidden-m {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: $mobile-size) {
+  .hidden-t {
+    display: block !important;
+  }
+  .hidden-m {
+    display: none !important;
+  }
+  .hidden-pt {
+    display: block !important;
+  }
+  .hidden-pm {
+    display: none !important;
+  }
+}

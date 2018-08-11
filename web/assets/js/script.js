@@ -24,14 +24,26 @@ var project = {
         project.resetSideBar();
         project.sideBarOpen();
         project.gnbOpen();
+        project.getScroll();
 
     },
+    /*scroll*/
+
+    getScroll:function () {
+        $(window).on('scroll',function () {
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop > 0){
+                $('html').addClass('get-scroll')
+            }else{
+                $('html').removeClass('get-scroll')
+            }
+        })
+    },
+    /*mobile*/
     gnbOpen:function () {
         $('.header__menu').on('click',function () {
             $('html').toggleClass('is-open')
         })
-
-
     },
     resetSideBar:function () {
         $(window).on('resize load', function () {
